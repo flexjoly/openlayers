@@ -4,6 +4,16 @@
 import {VOID} from './functions.js';
 import FormatType from './format/FormatType.js';
 
+
+//hier zouden de gevraagde event-triggers gemaakt kunnen worden 
+//zie: https://github.com/openlayers/openlayers/issues/9975
+//
+//loadFeaturesXhr() wordt voorzover ik kan zien alleen vanuit vectorlayer/source 
+//aangeroepen en heeft die layer/source ook als this
+//
+//this kan dus gebruikt worden om een event te sturen
+
+
 /**
  *
  * @type {boolean}
